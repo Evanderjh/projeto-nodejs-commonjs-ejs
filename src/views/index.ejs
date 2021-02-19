@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>NodeJS Avançado</title>
+</head>
+
+<body>
+    <div class="container mt-4">
+        <h1>NodeJS Avançado</h1>
+        <div class="card mt-4">
+            <div class="card-header">
+                <h2>Busque o endereço pelo CEP</h2>
+            </div>
+            <div class="card-body">
+                <form action="/consulta-cep" method="POST">
+                    <div class="form-group">
+                        <label for="cep">CEP: </label>
+                        <input class="form-control" type="text" name="cep" id="cep" />
+                        <div class="d-flex justify-content-end">
+                            <input type="submit" class="btn btn-success my-2 w-25">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="card mt-5">
+            <div class="card-header bg-dark text-white">
+                <h2>Busque perfil do GitHub pelo usuário: </h2>
+            </div>
+            <div class="card-body">
+                <form action="/consulta-github" method="POST">
+                    <div class="form-group">
+                        <label for="cep">Usuário: </label>
+                        <input class="form-control" type="text" name="git" id="git" />
+                        <div class="d-flex justify-content-end">
+                            <input type="submit" class="btn btn-dark text-white my-2 w-25">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
